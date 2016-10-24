@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -6374,9 +6374,10 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0800;
 			};
 			buildConfigurationList = 4B699DD5097D427F00A18468 /* Build configuration list for PBXProject "Jackdmp" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -8565,10 +8566,6 @@
 		4B0A28E30D52073D002EFF74 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -8597,15 +8594,11 @@
 		4B0A28E40D52073D002EFF74 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -8628,10 +8621,6 @@
 		4B0A28E50D52073D002EFF74 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -8655,7 +8644,6 @@
 		4B0A292A0D52108E002EFF74 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -8684,12 +8672,11 @@
 		4B0A292B0D52108E002EFF74 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -8712,7 +8699,6 @@
 		4B0A292C0D52108E002EFF74 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -8736,7 +8722,6 @@
 		4B19B2FD0E23620F00DD4A82 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = i386;
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -8789,7 +8774,6 @@
 		4B19B2FE0E23620F00DD4A82 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -8809,7 +8793,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
@@ -8840,10 +8824,6 @@
 		4B19B2FF0E23620F00DD4A82 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -8884,7 +8864,6 @@
 		4B2021E3133A9BA40019E213 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -8916,12 +8895,11 @@
 		4B2021E4133A9BA40019E213 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -8946,7 +8924,6 @@
 		4B2021E5133A9BA40019E213 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -8972,10 +8949,6 @@
 		4B3224E210A3156800838A8E /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -9023,10 +8996,6 @@
 		4B3224E310A3156800838A8E /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -9043,7 +9012,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DHAVE_OPUS",
@@ -9072,10 +9041,6 @@
 		4B3224E410A3156800838A8E /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -9118,7 +9083,6 @@
 		4B32252810A316B200838A8E /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -9166,7 +9130,6 @@
 		4B32252910A316B200838A8E /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -9183,7 +9146,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DHAVE_OPUS",
 					"-DSERVER_SIDE",
@@ -9212,10 +9175,6 @@
 		4B32252A10A316B200838A8E /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -9254,10 +9213,6 @@
 		4B32255E10A3187800838A8E /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -9302,10 +9257,6 @@
 		4B32255F10A3187800838A8E /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -9313,7 +9264,7 @@
 					../macosx,
 					../common,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DNO_JACK_ERROR",
 					"-DHAVE_CELT",
@@ -9348,10 +9299,6 @@
 		4B32256010A3187800838A8E /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -9382,7 +9329,6 @@
 		4B32257810A3190C00838A8E /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -9423,7 +9369,6 @@
 		4B32257910A3190C00838A8E /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -9431,7 +9376,7 @@
 					../macosx,
 					../common,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DNO_JACK_ERROR",
 					"-DHAVE_CELT",
@@ -9462,7 +9407,6 @@
 		4B32257A10A3190C00838A8E /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = (
@@ -9496,7 +9440,6 @@
 		4B35C4220D4731D1000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -9514,7 +9457,7 @@
 					../common,
 					RPC,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DUSE_POSIX_SHM",
 					"-D__SMP__",
@@ -9550,7 +9493,6 @@
 		4B35C4230D4731D1000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -9567,7 +9509,7 @@
 					../common,
 					RPC,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DUSE_POSIX_SHM",
 					"-D__SMP__",
@@ -9603,7 +9545,6 @@
 		4B35C4240D4731D1000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -9615,7 +9556,7 @@
 					../common,
 					RPC,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DUSE_POSIX_SHM",
 					"-D__SMP__",
@@ -9652,7 +9593,6 @@
 		4B35C4800D4731D1000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -9703,6 +9643,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -9715,7 +9656,6 @@
 		4B35C4810D4731D1000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -9747,7 +9687,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/lib/gcc/darwin/3.3;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DUSE_POSIX_SHM",
 					"-D__SMP__",
@@ -9768,6 +9708,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -9780,7 +9721,6 @@
 		4B35C4820D4731D1000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -9823,6 +9763,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -9834,7 +9775,6 @@
 		4B35C4F90D4731D1000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -9886,6 +9826,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackservermp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -9898,7 +9839,6 @@
 		4B35C4FA0D4731D1000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -9929,7 +9869,7 @@
 				INFOPLIST_FILE = "Jack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/lib/gcc/darwin/3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DSERVER_SIDE",
 					"-D__SMP__",
@@ -9953,6 +9893,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackservermp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -9965,7 +9906,6 @@
 		4B35C4FB0D4731D1000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -10008,6 +9948,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackdmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -10019,7 +9960,6 @@
 		4B35C5110D4731D1000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10051,12 +9991,11 @@
 		4B35C5120D4731D1000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -10081,7 +10020,6 @@
 		4B35C5130D4731D1000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -10107,7 +10045,6 @@
 		4B35C51D0D4731D1000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10139,12 +10076,11 @@
 		4B35C51E0D4731D1000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -10169,7 +10105,6 @@
 		4B35C51F0D4731D1000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -10195,7 +10130,6 @@
 		4B35C5290D4731D1000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10227,12 +10161,11 @@
 		4B35C52A0D4731D1000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -10257,7 +10190,6 @@
 		4B35C52B0D4731D1000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -10283,7 +10215,6 @@
 		4B35C5350D4731D1000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10313,12 +10244,11 @@
 		4B35C5360D4731D1000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -10341,7 +10271,6 @@
 		4B35C5370D4731D1000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -10365,7 +10294,6 @@
 		4B35C5410D4731D1000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -10395,11 +10323,10 @@
 		4B35C5420D4731D1000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -10423,7 +10350,6 @@
 		4B35C5430D4731D1000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
@@ -10447,7 +10373,6 @@
 		4B35C54D0D4731D1000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -10476,11 +10401,10 @@
 		4B35C54E0D4731D1000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -10503,7 +10427,6 @@
 		4B35C54F0D4731D1000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
@@ -10526,7 +10449,6 @@
 		4B35C55B0D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -10557,11 +10479,10 @@
 		4B35C55C0D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -10586,7 +10507,6 @@
 		4B35C55D0D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
@@ -10611,7 +10531,6 @@
 		4B35C5670D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10641,12 +10560,11 @@
 		4B35C5680D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -10669,7 +10587,6 @@
 		4B35C5690D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -10693,7 +10610,6 @@
 		4B35C5730D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -10726,12 +10642,11 @@
 		4B35C5740D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -10757,7 +10672,6 @@
 		4B35C5750D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -10784,7 +10698,6 @@
 		4B35C5830D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -10822,7 +10735,6 @@
 		4B35C5840D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -10834,7 +10746,7 @@
 					.,
 					RPC,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -10859,7 +10771,6 @@
 		4B35C5850D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
@@ -10887,7 +10798,6 @@
 		4B35C5970D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -10920,7 +10830,6 @@
 		4B35C5980D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
@@ -10929,7 +10838,7 @@
 					../posix,
 					.,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -10952,7 +10861,6 @@
 		4B35C5990D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_OPTIMIZATION_LEVEL = 3;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
@@ -10977,7 +10885,6 @@
 		4B35C5A30D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -11007,11 +10914,10 @@
 		4B35C5A40D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -11035,7 +10941,6 @@
 		4B35C5A50D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
@@ -11059,7 +10964,6 @@
 		4B35C5AF0D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -11088,12 +10992,11 @@
 		4B35C5B00D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -11116,7 +11019,6 @@
 		4B35C5B10D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -11140,7 +11042,6 @@
 		4B35C5BB0D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -11169,12 +11070,11 @@
 		4B35C5BC0D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -11197,7 +11097,6 @@
 		4B35C5BD0D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -11221,7 +11120,6 @@
 		4B35C5C70D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -11250,12 +11148,11 @@
 		4B35C5C80D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -11278,7 +11175,6 @@
 		4B35C5C90D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -11302,7 +11198,6 @@
 		4B35C5D30D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -11331,12 +11226,11 @@
 		4B35C5D40D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -11359,7 +11253,6 @@
 		4B35C5D50D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -11383,7 +11276,6 @@
 		4B35C5E70D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -11421,7 +11313,6 @@
 		4B35C5E80D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
@@ -11430,7 +11321,7 @@
 					../posix,
 					../common,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
@@ -11458,7 +11349,6 @@
 		4B35C5E90D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
@@ -11488,7 +11378,6 @@
 		4B35C5FB0D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -11526,7 +11415,6 @@
 		4B35C5FC0D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
@@ -11534,7 +11422,7 @@
 					.,
 					../common,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
@@ -11562,7 +11450,6 @@
 		4B35C5FD0D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
@@ -11592,7 +11479,6 @@
 		4B35C60F0D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -11630,7 +11516,6 @@
 		4B35C6100D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
@@ -11638,7 +11523,7 @@
 					.,
 					../common,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
@@ -11666,7 +11551,6 @@
 		4B35C6110D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
@@ -11696,7 +11580,6 @@
 		4B35C61B0D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -11750,7 +11633,6 @@
 		4B35C61C0D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -11768,7 +11650,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DSERVER_SIDE",
 					"-DMACH_RPC_MACH_SEMA",
@@ -11802,7 +11684,6 @@
 		4B35C61D0D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -11843,7 +11724,6 @@
 		4B35C6260D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -11891,7 +11771,6 @@
 		4B35C6270D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -11904,7 +11783,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
 					libportaudio.a,
@@ -11936,7 +11815,6 @@
 		4B35C6280D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -11978,7 +11856,6 @@
 		4B35C6310D4731D2000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -12029,7 +11906,6 @@
 		4B35C6320D4731D2000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -12046,7 +11922,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DSERVER_SIDE",
 					"-DMACH_RPC_MACH_SEMA",
@@ -12074,7 +11950,6 @@
 		4B35C6330D4731D2000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -12113,7 +11988,6 @@
 		4B35C63B0D4731D3000DE7AE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -12158,7 +12032,6 @@
 		4B35C63C0D4731D3000DE7AE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -12171,7 +12044,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -12200,12 +12073,6 @@
 		4B35C63D0D4731D3000DE7AE /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc64,
-					ppc,
-					i386,
-					x86_64,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -12303,10 +12170,6 @@
 		4B363DD50DEB02F6001F72D9 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -12338,15 +12201,11 @@
 		4B363DD60DEB02F6001F72D9 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -12371,10 +12230,6 @@
 		4B363DD70DEB02F6001F72D9 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -12400,10 +12255,6 @@
 		4B363E170DEB03C5001F72D9 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -12435,15 +12286,11 @@
 		4B363E180DEB03C5001F72D9 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -12468,10 +12315,6 @@
 		4B363E190DEB03C5001F72D9 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -12497,10 +12340,6 @@
 		4B363E4B0DEB0775001F72D9 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -12532,15 +12371,11 @@
 		4B363E4C0DEB0775001F72D9 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -12565,10 +12400,6 @@
 		4B363E4D0DEB0775001F72D9 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -12594,10 +12425,6 @@
 		4B363EE60DEB091C001F72D9 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -12634,10 +12461,6 @@
 		4B363EE70DEB091C001F72D9 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -12646,7 +12469,7 @@
 					../common,
 				);
 				LIBRARY_SEARCH_PATHS = /opt/local/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					/opt/local/lib/libsndfile.a,
@@ -12672,10 +12495,6 @@
 		4B363EE80DEB091C001F72D9 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -12701,10 +12520,6 @@
 		4B363F1B0DEB0A6A001F72D9 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -12736,15 +12551,11 @@
 		4B363F1C0DEB0A6A001F72D9 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -12769,10 +12580,6 @@
 		4B363F1D0DEB0A6A001F72D9 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -12798,10 +12605,6 @@
 		4B363F320DEB0BD1001F72D9 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -12833,15 +12636,11 @@
 		4B363F330DEB0BD1001F72D9 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -12866,10 +12665,6 @@
 		4B363F340DEB0BD1001F72D9 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -12895,10 +12690,6 @@
 		4B363F6F0DEB0D4E001F72D9 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -12930,15 +12721,11 @@
 		4B363F700DEB0D4E001F72D9 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -12963,10 +12750,6 @@
 		4B363F710DEB0D4E001F72D9 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -12992,10 +12775,6 @@
 		4B38115C1326878E00C61B14 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -13028,16 +12807,12 @@
 		4B38115D1326878E00C61B14 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
 				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -13062,10 +12837,6 @@
 		4B38115E1326878E00C61B14 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -13091,7 +12862,6 @@
 		4B3811941326884E00C61B14 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -13123,12 +12893,11 @@
 		4B3811951326884E00C61B14 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -13153,7 +12922,6 @@
 		4B3811961326884E00C61B14 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -13179,10 +12947,6 @@
 		4B43A8B710145F6F00E52943 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -13231,10 +12995,6 @@
 		4B43A8B810145F6F00E52943 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -13251,7 +13011,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
@@ -13277,10 +13037,6 @@
 		4B43A8B910145F6F00E52943 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -13319,7 +13075,6 @@
 		4B43A8E41014615800E52943 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -13368,7 +13123,6 @@
 		4B43A8E51014615800E52943 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -13385,7 +13139,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DSERVER_SIDE",
 					"-DMACH_RPC_MACH_SEMA",
@@ -13413,7 +13167,6 @@
 		4B43A8E61014615800E52943 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -13452,7 +13205,6 @@
 		4B47ACD410B5890100469C67 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -13503,6 +13255,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -13515,7 +13268,6 @@
 		4B47ACD510B5890100469C67 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -13546,7 +13298,7 @@
 				INFOPLIST_FILE = "Jack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/lib/gcc/darwin/3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DUSE_POSIX_SHM",
 					"-D__SMP__",
@@ -13568,6 +13320,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -13580,7 +13333,6 @@
 		4B47ACD610B5890100469C67 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -13623,6 +13375,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -13634,10 +13387,6 @@
 		4B5A1BB80CD1CB9E0005BF74 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -13669,15 +13418,11 @@
 		4B5A1BB90CD1CB9E0005BF74 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -13702,10 +13447,6 @@
 		4B5A1BBA0CD1CB9E0005BF74 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -13731,10 +13472,6 @@
 		4B5A1BD70CD1CCE10005BF74 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -13766,15 +13503,11 @@
 		4B5A1BD80CD1CCE10005BF74 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -13799,10 +13532,6 @@
 		4B5A1BD90CD1CCE10005BF74 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -13828,7 +13557,6 @@
 		4B5E08D20E5B66EE00BEE4E0 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = i386;
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -13883,7 +13611,6 @@
 		4B5E08D30E5B66EE00BEE4E0 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -13902,7 +13629,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DHAVE_CELT",
@@ -13936,10 +13663,6 @@
 		4B5E08D40E5B66EE00BEE4E0 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -13980,7 +13703,6 @@
 		4B6654F4127C34AE00753A79 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -14009,12 +13731,11 @@
 		4B6654F5127C34AE00753A79 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -14037,7 +13758,6 @@
 		4B6654F6127C34AE00753A79 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -14119,10 +13839,6 @@
 		4B699BAE097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -14176,10 +13892,6 @@
 		4B699BAF097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -14232,10 +13944,6 @@
 		4B699BB0097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -14284,10 +13992,6 @@
 		4B699C44097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -14312,7 +14016,7 @@
 				INFOPLIST_FILE = "Jack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/lib/gcc/darwin/3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DUSE_POSIX_SHM",
 					"-D__SMP__",
@@ -14333,6 +14037,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -14345,10 +14050,6 @@
 		4B699C45097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -14375,7 +14076,7 @@
 				INFOPLIST_FILE = "Jack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/lib/gcc/darwin/3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DUSE_POSIX_SHM",
 					"-D__SMP__",
@@ -14397,6 +14098,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -14409,10 +14111,6 @@
 		4B699C46097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -14429,7 +14127,7 @@
 				INFOPLIST_FILE = "Jack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/lib/gcc/darwin/3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DUSE_POSIX_SHM",
 					"-D__SMP__",
@@ -14451,6 +14149,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -14462,10 +14161,6 @@
 		4B699CA9097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -14490,7 +14185,7 @@
 				INFOPLIST_FILE = "Jack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/lib/gcc/darwin/3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DSERVER_SIDE",
 					"-D__SMP__",
@@ -14512,6 +14207,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackservermp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -14524,10 +14220,6 @@
 		4B699CAA097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -14554,7 +14246,7 @@
 				INFOPLIST_FILE = "Jack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/lib/gcc/darwin/3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DSERVER_SIDE",
 					"-D__SMP__",
@@ -14578,6 +14270,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackservermp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -14590,10 +14283,6 @@
 		4B699CAB097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -14610,7 +14299,7 @@
 				INFOPLIST_FILE = "Jack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/lib/gcc/darwin/3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-D__SMP__",
 					"-DUSE_POSIX_SHM",
@@ -14632,6 +14321,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackdmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -14643,10 +14333,6 @@
 		4B699CB8097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -14678,15 +14364,11 @@
 		4B699CB9097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -14711,10 +14393,6 @@
 		4B699CBA097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -14740,10 +14418,6 @@
 		4B699CC8097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -14773,15 +14447,11 @@
 		4B699CC9097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -14804,10 +14474,6 @@
 		4B699CCA097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -14831,10 +14497,6 @@
 		4B699CD8097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -14864,14 +14526,10 @@
 		4B699CD9097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -14895,10 +14553,6 @@
 		4B699CDA097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
@@ -14922,10 +14576,6 @@
 		4B699CE8097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -14954,14 +14604,10 @@
 		4B699CE9097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -14984,10 +14630,6 @@
 		4B699CEA097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
@@ -15010,10 +14652,6 @@
 		4B699CFA097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -15044,14 +14682,10 @@
 		4B699CFB097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -15076,10 +14710,6 @@
 		4B699CFC097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
@@ -15104,10 +14734,6 @@
 		4B699D0A097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -15140,15 +14766,11 @@
 		4B699D0B097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -15174,10 +14796,6 @@
 		4B699D0C097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -15204,10 +14822,6 @@
 		4B699D1E097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15251,10 +14865,6 @@
 		4B699D1F097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15272,7 +14882,7 @@
 					../posix,
 					RPC,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -15297,10 +14907,6 @@
 		4B699D20097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
@@ -15333,10 +14939,6 @@
 		4B699D36097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15375,10 +14977,6 @@
 		4B699D37097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15393,7 +14991,7 @@
 					../common/jack,
 					../posix,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -15416,10 +15014,6 @@
 		4B699D38097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
@@ -15449,10 +15043,6 @@
 		4B699D46097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -15482,14 +15072,10 @@
 		4B699D47097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -15513,10 +15099,6 @@
 		4B699D48097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
@@ -15540,10 +15122,6 @@
 		4B699D5E097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15587,10 +15165,6 @@
 		4B699D5F097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15604,7 +15178,7 @@
 					../common/jack,
 					../common,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
@@ -15632,10 +15206,6 @@
 		4B699D60097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
@@ -15670,10 +15240,6 @@
 		4B699D76097D421600A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15717,10 +15283,6 @@
 		4B699D77097D421600A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15734,7 +15296,7 @@
 					../common/jack,
 					../common,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
@@ -15762,10 +15324,6 @@
 		4B699D78097D421600A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
@@ -15800,10 +15358,6 @@
 		4B699D8E097D421700A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15847,10 +15401,6 @@
 		4B699D8F097D421700A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -15864,7 +15414,7 @@
 					../common/jack,
 					../common,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
@@ -15892,10 +15442,6 @@
 		4B699D90097D421700A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
@@ -15930,10 +15476,6 @@
 		4B699D9E097D421700A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -15986,10 +15528,6 @@
 		4B699D9F097D421700A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -16008,7 +15546,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
@@ -16040,10 +15578,6 @@
 		4B699DA0097D421700A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -16085,10 +15619,6 @@
 		4B699DAD097D421700A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -16137,10 +15667,6 @@
 		4B699DAE097D421700A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -16157,7 +15683,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
@@ -16183,10 +15709,6 @@
 		4B699DAF097D421700A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -16225,25 +15747,80 @@
 		4B699DD6097D427F00A18468 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Development;
 		};
 		4B699DD7097D427F00A18468 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Deployment;
 		};
 		4B699DD8097D427F00A18468 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 			};
 			name = Default;
 		};
 		4B8692D81371DB4700D2D11B /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -16295,6 +15872,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jacknet;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -16307,7 +15885,6 @@
 		4B8692D91371DB4700D2D11B /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -16342,7 +15919,7 @@
 					/opt/local/lib,
 					/usr/lib/gcc/darwin/3.3,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DUSE_POSIX_SHM",
 					"-D__SMP__",
@@ -16361,6 +15938,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jacknet;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -16373,7 +15951,6 @@
 		4B8692DA1371DB4700D2D11B /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -16416,6 +15993,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -16427,10 +16005,6 @@
 		4B8F16E213290DC80002AD73 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -16462,15 +16036,11 @@
 		4B8F16E313290DC80002AD73 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -16495,10 +16065,6 @@
 		4B8F16E413290DC80002AD73 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -16524,7 +16090,6 @@
 		4B8F16EF13290E0E0002AD73 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -16556,12 +16121,11 @@
 		4B8F16F013290E0E0002AD73 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -16586,7 +16150,6 @@
 		4B8F16F113290E0E0002AD73 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -16612,10 +16175,6 @@
 		4B978DB80A31CF4A009E2DD1 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -16663,10 +16222,6 @@
 		4B978DB90A31CF4A009E2DD1 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -16680,7 +16235,7 @@
 				LD_OPENMP_FLAGS = "-fopenmp";
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
@@ -16713,10 +16268,6 @@
 		4B978DBA0A31CF4A009E2DD1 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -16758,7 +16309,6 @@
 		4BA339A910B2E36800190E3B /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -16811,6 +16361,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackservermp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -16823,7 +16374,6 @@
 		4BA339AA10B2E36800190E3B /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -16854,7 +16404,7 @@
 				INFOPLIST_FILE = "Jack-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LIBRARY_SEARCH_PATHS = /usr/lib/gcc/darwin/3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = (
 					"-DJACK_MONITOR",
 					"-DSERVER_SIDE",
@@ -16880,6 +16430,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackservermp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -16892,7 +16443,6 @@
 		4BA339AB10B2E36800190E3B /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -16935,6 +16485,7 @@
 					CoreAudio,
 				);
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grame.Jackmp;
 				PRODUCT_NAME = Jackdmp;
 				REZ_EXECUTABLE = NO;
 				SDKROOT = "";
@@ -16946,10 +16497,6 @@
 		4BA692AD0CBE4BC700EAD520 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -16978,15 +16525,11 @@
 		4BA692AE0CBE4BC700EAD520 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -17009,10 +16552,6 @@
 		4BA692AF0CBE4BC700EAD520 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -17036,10 +16575,6 @@
 		4BA692D10CBE4C9000EAD520 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -17068,15 +16603,11 @@
 		4BA692D20CBE4C9000EAD520 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -17099,10 +16630,6 @@
 		4BA692D30CBE4C9000EAD520 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -17126,10 +16653,6 @@
 		4BA7FEC00D8E76270017FF73 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -17159,15 +16682,11 @@
 		4BA7FEC10D8E76270017FF73 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -17190,10 +16709,6 @@
 		4BA7FEC20D8E76270017FF73 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -17217,10 +16732,6 @@
 		4BD623F40CBCF0F000DE782F /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -17265,10 +16776,6 @@
 		4BD623F50CBCF0F000DE782F /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -17281,7 +16788,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
@@ -17311,10 +16818,6 @@
 		4BD623F60CBCF0F000DE782F /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -17355,7 +16858,6 @@
 		4BDCDB9A1001FB9C00B15929 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -17407,7 +16909,6 @@
 		4BDCDB9B1001FB9C00B15929 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -17426,7 +16927,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DSERVER_SIDE",
@@ -17457,7 +16958,6 @@
 		4BDCDB9C1001FB9C00B15929 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -17499,7 +16999,6 @@
 		4BDCDBC21001FCC000B15929 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -17548,7 +17047,6 @@
 		4BDCDBC31001FCC000B15929 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -17565,7 +17063,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DHAVE_OPUS",
@@ -17595,7 +17093,6 @@
 		4BDCDBC41001FCC000B15929 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -17634,7 +17131,6 @@
 		4BDCDBE51001FD2D00B15929 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -17684,7 +17180,6 @@
 		4BDCDBE61001FD2D00B15929 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -17702,7 +17197,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DSERVER_SIDE",
 					"$(OTHER_CFLAGS)",
@@ -17734,10 +17229,6 @@
 		4BDCDBE71001FD2D00B15929 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -17778,10 +17269,6 @@
 		4BDCDBFC1001FD7300B15929 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -17834,10 +17321,6 @@
 		4BDCDBFD1001FD7300B15929 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -17857,7 +17340,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DSERVER_SIDE",
 					"$(OTHER_CFLAGS)",
@@ -17890,10 +17373,6 @@
 		4BDCDBFE1001FD7300B15929 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					x86_64,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -17934,10 +17413,6 @@
 		4BDCDC221001FDE300B15929 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -17992,10 +17467,6 @@
 		4BDCDC231001FDE300B15929 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -18014,7 +17485,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DHAVE_CELT",
 					"-DSERVER_SIDE",
@@ -18048,10 +17519,6 @@
 		4BDCDC241001FDE300B15929 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					x86_64,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -18092,10 +17559,6 @@
 		4BE6C6A00A3E096F005A203A /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -18124,15 +17587,11 @@
 		4BE6C6A10A3E096F005A203A /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -18155,10 +17614,6 @@
 		4BE6C6A20A3E096F005A203A /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -18182,10 +17637,6 @@
 		4BE99D2D0AD7A04800C59091 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -18214,15 +17665,11 @@
 		4BE99D2E0AD7A04800C59091 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -18245,10 +17692,6 @@
 		4BE99D2F0AD7A04800C59091 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				GCC_OPTIMIZATION_LEVEL = 3;
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -18272,10 +17715,6 @@
 		4BF339090F8B864B0080FB5B /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -18324,10 +17763,6 @@
 		4BF3390A0F8B864B0080FB5B /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -18346,7 +17781,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "-DMACH_RPC_MACH_SEMA";
 				OTHER_LDFLAGS = (
@@ -18374,10 +17809,6 @@
 		4BF3390B0F8B864B0080FB5B /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -18419,10 +17850,6 @@
 		4BFA5E950DEC4D9C00FA4CDB /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -18461,10 +17888,6 @@
 		4BFA5E960DEC4D9C00FA4CDB /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -18479,7 +17902,7 @@
 					../common/jack,
 					../common,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -18502,10 +17925,6 @@
 		4BFA5E970DEC4D9C00FA4CDB /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
@@ -18535,7 +17954,6 @@
 		4BFA82890DF6A9E40087B4E1 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -18567,12 +17985,11 @@
 		4BFA828A0DF6A9E40087B4E1 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -18597,7 +18014,6 @@
 		4BFA828B0DF6A9E40087B4E1 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -18623,7 +18039,6 @@
 		4BFA829C0DF6A9E40087B4E1 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -18655,12 +18070,11 @@
 		4BFA829D0DF6A9E40087B4E1 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -18685,7 +18099,6 @@
 		4BFA829E0DF6A9E40087B4E1 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -18711,7 +18124,6 @@
 		4BFA82A80DF6A9E40087B4E1 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -18748,7 +18160,6 @@
 		4BFA82A90DF6A9E40087B4E1 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -18757,7 +18168,7 @@
 					../common,
 				);
 				LIBRARY_SEARCH_PATHS = /opt/local/lib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					/opt/local/lib/libsndfile.a,
@@ -18783,7 +18194,6 @@
 		4BFA82AA0DF6A9E40087B4E1 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -18809,7 +18219,6 @@
 		4BFA82B40DF6A9E40087B4E1 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -18841,12 +18250,11 @@
 		4BFA82B50DF6A9E40087B4E1 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -18871,7 +18279,6 @@
 		4BFA82B60DF6A9E40087B4E1 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -18897,7 +18304,6 @@
 		4BFA82C00DF6A9E40087B4E1 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -18929,12 +18335,11 @@
 		4BFA82C10DF6A9E40087B4E1 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -18959,7 +18364,6 @@
 		4BFA82C20DF6A9E40087B4E1 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -18985,7 +18389,6 @@
 		4BFA82CC0DF6A9E40087B4E1 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -19017,12 +18420,11 @@
 		4BFA82CD0DF6A9E40087B4E1 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -19047,7 +18449,6 @@
 		4BFA82CE0DF6A9E40087B4E1 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -19073,10 +18474,6 @@
 		4BFA999F0AAAF3B0009E916C /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -19106,15 +18503,11 @@
 		4BFA99A00AAAF3B0009E916C /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = ../common;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -19137,10 +18530,6 @@
 		4BFA99A10AAAF3B0009E916C /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = ../common;
 				OTHER_CFLAGS = "";
@@ -19164,10 +18553,6 @@
 		BA222ACC0DC88132001A17F4 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -19219,10 +18604,6 @@
 		BA222ACD0DC88132001A17F4 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -19239,7 +18620,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = (
 					"-DHAVE_OPUS",
@@ -19268,10 +18649,6 @@
 		BA222ACE0DC88132001A17F4 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
@@ -19310,10 +18687,6 @@
 		BA222AE60DC882DB001A17F4 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -19363,10 +18736,6 @@
 		BA222AE70DC882DB001A17F4 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -19384,7 +18753,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_STYLE = DYNAMIC;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = (
@@ -19414,10 +18783,6 @@
 		BA222AE80DC882DB001A17F4 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_EXTENSION = so;
