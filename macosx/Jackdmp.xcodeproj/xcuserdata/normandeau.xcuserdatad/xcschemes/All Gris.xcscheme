@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0720"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C41B0D4731D1000DE7AE"
+               BuildableName = "jackdmp"
+               BlueprintName = "jackdmp framework 64bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C4270D4731D1000DE7AE"
+               BuildableName = "Jackmp.framework"
+               BlueprintName = "Jackmp.framework 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B47AC8010B5890100469C67"
+               BuildableName = "Jackmp.framework"
+               BlueprintName = "Jackmp.framework 64 bits debugging"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C4850D4731D1000DE7AE"
+               BuildableName = "Jackdmp.framework"
+               BlueprintName = "Jackservermp.framework 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BA3393310B2E36800190E3B"
+               BuildableName = "Jackdmp.framework"
+               BlueprintName = "Jackservermp.framework 64 bits profiling"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C6350D4731D3000DE7AE"
+               BuildableName = "inprocess.so"
+               BlueprintName = "inprocess 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BFA82950DF6A9E40087B4E1"
+               BuildableName = "jack_midiseq"
+               BlueprintName = "jack_bufsize 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C53A0D4731D1000DE7AE"
+               BuildableName = "jack_connect"
+               BlueprintName = "jack_connect 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C6140D4731D2000DE7AE"
+               BuildableName = "jack_coreaudio.so"
+               BlueprintName = "jack_coreaudio 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BDCDB931001FB9C00B15929"
+               BuildableName = "jack_coreaudio.so"
+               BlueprintName = "jack_coremidi 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5B40D4731D2000DE7AE"
+               BuildableName = "jack_cpu"
+               BlueprintName = "jack_cpu 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5460D4731D1000DE7AE"
+               BuildableName = "jack_disconnect"
+               BlueprintName = "jack_disconnect 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C62A0D4731D2000DE7AE"
+               BuildableName = "jack_dummy.so"
+               BlueprintName = "jack_dummy 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BFA82820DF6A9E40087B4E1"
+               BuildableName = "jack_midiseq"
+               BlueprintName = "jack_evmon 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C56C0D4731D2000DE7AE"
+               BuildableName = "jack_external_metro"
+               BlueprintName = "jack_external_metro 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5520D4731D2000DE7AE"
+               BuildableName = "jack_freewheel"
+               BlueprintName = "jack_freewheel 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BFA82C50DF6A9E40087B4E1"
+               BuildableName = "jack_midiseq"
+               BlueprintName = "jack_impulse_grabber 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5600D4731D2000DE7AE"
+               BuildableName = "jdelay"
+               BlueprintName = "jack_iodelay 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B38118D1326884E00C61B14"
+               BuildableName = "jack_midiseq"
+               BlueprintName = "jack_latent_client 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5C00D4731D2000DE7AE"
+               BuildableName = "jack_load"
+               BlueprintName = "jack_load 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B43A8DD1014615800E52943"
+               BuildableName = "jack_dummy.so"
+               BlueprintName = "jack_loopback 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C52E0D4731D1000DE7AE"
+               BuildableName = "jack_lsp"
+               BlueprintName = "jack_lsp 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5220D4731D1000DE7AE"
+               BuildableName = "jack_metro"
+               BlueprintName = "jack_metro 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B8F16E813290E0E0002AD73"
+               BuildableName = "jack_midisine"
+               BlueprintName = "jack_midi_dump 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B2021DC133A9BA40019E213"
+               BuildableName = "jack_midisine"
+               BlueprintName = "jack_midi_latency 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C50A0D4731D1000DE7AE"
+               BuildableName = "jack_midiseq"
+               BlueprintName = "jack_midiseq 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5160D4731D1000DE7AE"
+               BuildableName = "jack_midisine"
+               BlueprintName = "jack_midisine 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BFA82AD0DF6A9E40087B4E1"
+               BuildableName = "jack_midiseq"
+               BlueprintName = "jack_monitor_client 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BDCDBB71001FCC000B15929"
+               BuildableName = "jack_dummy.so"
+               BlueprintName = "jack_net 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B32251D10A316B200838A8E"
+               BuildableName = "jack_dummy.so"
+               BlueprintName = "jack_netone 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B32257110A3190C00838A8E"
+               BuildableName = "jack_midiseq"
+               BlueprintName = "jack_netsource 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C61F0D4731D2000DE7AE"
+               BuildableName = "jack_portaudio.so"
+               BlueprintName = "jack_portaudio 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BFA82A10DF6A9E40087B4E1"
+               BuildableName = "jack_midiseq"
+               BlueprintName = "jack_rec 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B6654ED127C34AE00753A79"
+               BuildableName = "jack_test"
+               BlueprintName = "jack_server_control 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BFA82B90DF6A9E40087B4E1"
+               BuildableName = "jack_midiseq"
+               BlueprintName = "jack_showtime 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5A80D4731D2000DE7AE"
+               BuildableName = "jack_test"
+               BlueprintName = "jack_test 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B0A29230D52108E002EFF74"
+               BuildableName = "jack_thread_wait"
+               BlueprintName = "jack_thread_wait 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5CC0D4731D2000DE7AE"
+               BuildableName = "jack_unload"
+               BlueprintName = "jack_unload 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4BDCDBD71001FD2D00B15929"
+               BuildableName = "inprocess.so"
+               BlueprintName = "netmanager 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5EC0D4731D2000DE7AE"
+               BuildableName = "synchroClient"
+               BlueprintName = "synchroClient 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5D80D4731D2000DE7AE"
+               BuildableName = "synchroServer"
+               BlueprintName = "synchroServer 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C6000D4731D2000DE7AE"
+               BuildableName = "synchroServerClient"
+               BlueprintName = "synchroServerClient 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5780D4731D2000DE7AE"
+               BuildableName = "testAtomic"
+               BlueprintName = "testAtomic 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C5880D4731D2000DE7AE"
+               BuildableName = "testSem"
+               BlueprintName = "testSem 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4B35C59C0D4731D2000DE7AE"
+               BuildableName = "zombie"
+               BlueprintName = "zombie 64 bits"
+               ReferencedContainer = "container:Jackdmp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Development"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4B35C41B0D4731D1000DE7AE"
+            BuildableName = "jackdmp"
+            BlueprintName = "jackdmp framework 64bits"
+            ReferencedContainer = "container:Jackdmp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Development"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4B35C41B0D4731D1000DE7AE"
+            BuildableName = "jackdmp"
+            BlueprintName = "jackdmp framework 64bits"
+            ReferencedContainer = "container:Jackdmp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Deployment"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4B35C41B0D4731D1000DE7AE"
+            BuildableName = "jackdmp"
+            BlueprintName = "jackdmp framework 64bits"
+            ReferencedContainer = "container:Jackdmp.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Development">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Deployment"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
