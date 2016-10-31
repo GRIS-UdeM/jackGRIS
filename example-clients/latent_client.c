@@ -25,6 +25,8 @@ jack_client_t *client;
 
 jack_default_audio_sample_t *delay_line;
 jack_nframes_t delay_index;
+
+//the bigger this is, the longer the delay
 jack_nframes_t latency = 1024;
 
 #ifdef WIN32
@@ -38,27 +40,23 @@ jack_nframes_t latency = 1024;
  * This client does nothing more than copy data from its input port to its output port. It will exit when stopped by
  * the user (e.g. using Ctrl-C on a unix-ish operating system)
  */
-int
-process (jack_nframes_t nframes, void *arg)
-{
+int process (jack_nframes_t nframes, void *arg) {
 	jack_default_audio_sample_t *in, *out;
 	int k;
 
-	in = jack_port_get_buffer (input_port, nframes);
+	in  = jack_port_get_buffer (input_port, nframes);
 	out = jack_port_get_buffer (output_port, nframes);
 
 	for (k=0; k<nframes; k++) {
-		out[k] = delay_line[delay_index];
+		out[k]                  = delay_line[delay_index];
 		delay_line[delay_index] = in[k];
-		delay_index = (delay_index + 1) % latency;
+		delay_index             = (delay_index + 1) % latency;
 	}
 
 	return 0;
 }
 
-void
-latency_cb (jack_latency_callback_mode_t mode, void *arg)
-{
+void latency_cb (jack_latency_callback_mode_t mode, void *arg) {
 	jack_latency_range_t range;
 	if (mode == JackCaptureLatency) {
 		jack_port_get_latency_range (input_port, mode, &range);
@@ -74,23 +72,18 @@ latency_cb (jack_latency_callback_mode_t mode, void *arg)
 }
 
 /**
- * JACK calls this shutdown_callback if the server ever shuts down or
- * decides to disconnect the client.
+ * JACK calls this shutdown_callback if the server ever shuts down or decides to disconnect the client.
  */
-void
-jack_shutdown (void *arg)
-{
+void jack_shutdown (void *arg) {
     fprintf(stderr, "JACK shut down, exiting ...\n");
 	exit (1);
 }
 
-int
-main (int argc, char *argv[])
-{
+int main (int argc, char *argv[]) {
 	const char **ports;
 	const char *client_name = "latent";
 	const char *server_name = NULL;
-	jack_options_t options = JackNullOption;
+	jack_options_t options  = JackNullOption;
 	jack_status_t status;
 
     printf("========= LATENT_CLIENT FTW ============\n\n\n");
@@ -98,7 +91,7 @@ main (int argc, char *argv[])
 	if (argc == 2)
 		latency = atoi(argv[1]);
 
-	delay_line = malloc( latency * sizeof(jack_default_audio_sample_t));
+	delay_line = malloc(latency * sizeof(jack_default_audio_sample_t));
 	if (delay_line == NULL) {
 		fprintf (stderr, "no memory");
 		exit(1);
@@ -107,7 +100,6 @@ main (int argc, char *argv[])
 	memset (delay_line, 0, latency * sizeof(jack_default_audio_sample_t));
 
 	/* open a client connection to the JACK server */
-
 	client = jack_client_open (client_name, options, &status, server_name);
 	if (client == NULL) {
 		fprintf (stderr, "jack_client_open() failed, "
@@ -125,30 +117,22 @@ main (int argc, char *argv[])
 		fprintf (stderr, "unique name `%s' assigned\n", client_name);
 	}
 
-	/* tell the JACK server to call `process()' whenever
-	   there is work to be done.
-	*/
-
+	// tell the JACK server to call `process()' whenever there is work to be done.
 	jack_set_process_callback (client, process, 0);
 
-	/* tell the JACK server to call `latency()' whenever
-	   the latency needs to be recalculated.
-	*/
-	if (jack_set_latency_callback)
+	// tell the JACK server to call `latency()' whenever the latency needs to be recalculated.
+    if (jack_set_latency_callback){
 		jack_set_latency_callback (client, latency_cb, 0);
+    }
 
-	/* tell the JACK server to call `jack_shutdown()' if
-	   it ever shuts down, either entirely, or if it
-	   just decides to stop calling us.
-	*/
-
+	// tell the JACK server to call `jack_shutdown()' if it ever shuts down, either entirely, or if it just decides to stop calling us.
 	jack_on_shutdown (client, jack_shutdown, 0);
 
 	// display the current sample rate.
 	printf ("engine sample rate: %" PRIu32 "\n", jack_get_sample_rate (client));
 
 	/* create two ports */
-	input_port = jack_port_register (client, "input", JACK_DEFAULT_AUDIO_TYPE, JackPortIsInput, 0);
+	input_port  = jack_port_register (client, "input",  JACK_DEFAULT_AUDIO_TYPE, JackPortIsInput,  0);
 	output_port = jack_port_register (client, "output", JACK_DEFAULT_AUDIO_TYPE, JackPortIsOutput, 0);
 
 	if ((input_port == NULL) || (output_port == NULL)) {
@@ -156,22 +140,15 @@ main (int argc, char *argv[])
 		exit (1);
 	}
 
-	/* Tell the JACK server that we are ready to roll.  Our
-	 * process() callback will start running now. */
-
+	// Tell the JACK server that we are ready to roll.  Our process() callback will start running now.
 	if (jack_activate (client)) {
 		fprintf (stderr, "cannot activate client");
 		exit (1);
 	}
 
-	/* Connect the ports.  You can't do this before the client is
-	 * activated, because we can't make connections to clients
-	 * that aren't running.  Note the confusing (but necessary)
-	 * orientation of the driver backend ports: playback ports are
-	 * "input" to the backend, and capture ports are "output" from
-	 * it.
-	 */
-
+	// Connect the ports.  You can't do this before the client is activated, because we can't make connections to clients
+    // that aren't running.  Note the confusing (but necessary orientation of the driver backend ports: playback ports are
+    // "input" to the backend, and capture ports are "output" from it.
 	ports = jack_get_ports (client, NULL, NULL, JackPortIsPhysical|JackPortIsOutput);
 	if (ports == NULL) {
 		fprintf(stderr, "no physical capture ports\n");
@@ -198,7 +175,6 @@ main (int argc, char *argv[])
 	jack_free (ports);
 
 	/* keep running until stopped by the user */
-
 	jack_sleep (-1);
 
 	/* this is never reached but if the program
@@ -217,7 +193,10 @@ main (int argc, char *argv[])
 
 #else
 
-//=====================================================================================================================================
+
+
+
+
 
 /** @file simple_client.c
  *
@@ -231,6 +210,7 @@ main (int argc, char *argv[])
 #include <string.h>
 #include <math.h>
 #include <signal.h>
+
 #ifndef WIN32
 #include <unistd.h>
 #endif
@@ -244,16 +224,15 @@ jack_client_t *client;
 #endif
 
 #define TABLE_SIZE   (200)
-typedef struct
-{
+
+typedef struct {
     float sine[TABLE_SIZE];
     int left_phase;
     int right_phase;
 }
 paTestData;
 
-static void signal_handler(int sig)
-{
+static void signal_handler(int sig) {
     jack_client_close(client);
     fprintf(stderr, "signal received, exiting ...\n");
     exit(0);
@@ -267,9 +246,7 @@ static void signal_handler(int sig)
  * running, copy the input port to the output.  When it stops, exit.
  */
 
-int
-process (jack_nframes_t nframes, void *arg)
-{
+int process (jack_nframes_t nframes, void *arg) {
     jack_default_audio_sample_t *out1, *out2;
     paTestData *data = (paTestData*)arg;
     int i;
@@ -277,32 +254,30 @@ process (jack_nframes_t nframes, void *arg)
     out1 = (jack_default_audio_sample_t*)jack_port_get_buffer (output_port1, nframes);
     out2 = (jack_default_audio_sample_t*)jack_port_get_buffer (output_port2, nframes);
     
-    for( i=0; i<nframes; i++ )
-    {
-        out1[i] = data->sine[data->left_phase];  /* left */
+    for(i = 0; i < nframes; ++i) {
+        out1[i] = data->sine[data->left_phase];   /* left */
         out2[i] = data->sine[data->right_phase];  /* right */
         data->left_phase += 1;
-        if( data->left_phase >= TABLE_SIZE ) data->left_phase -= TABLE_SIZE;
+        if (data->left_phase >= TABLE_SIZE){
+            data->left_phase -= TABLE_SIZE;
+        }
         data->right_phase += 3; /* higher pitch so we can distinguish left and right. */
-        if( data->right_phase >= TABLE_SIZE ) data->right_phase -= TABLE_SIZE;
+        if(data->right_phase >= TABLE_SIZE){
+            data->right_phase -= TABLE_SIZE;
+        }
     }
     
     return 0;
 }
 
 /**
- * JACK calls this shutdown_callback if the server ever shuts down or
- * decides to disconnect the client.
+ * JACK calls this shutdown_callback if the server ever shuts down or decides to disconnect the client.
  */
-void
-jack_shutdown (void *arg)
-{
+void jack_shutdown (void *arg) {
     exit (1);
 }
 
-int
-main (int argc, char *argv[])
-{
+int main (int argc, char *argv[]) {
     const char **ports;
     const char *client_name;
     const char *server_name = NULL;
@@ -327,19 +302,17 @@ main (int argc, char *argv[])
         }
     }
     
-    for( i=0; i<TABLE_SIZE; i++ )
-    {
+    //fill wave table
+    for(i = 0; i < TABLE_SIZE; ++i) {
         data.sine[i] = 0.2 * (float) sin( ((double)i/(double)TABLE_SIZE) * M_PI * 2. );
     }
     data.left_phase = data.right_phase = 0;
     
     
-    /* open a client connection to the JACK server */
-    
+    // open a client connection to the JACK server
     client = jack_client_open (client_name, options, &status, server_name);
     if (client == NULL) {
-        fprintf (stderr, "jack_client_open() failed, "
-                 "status = 0x%2.0x\n", status);
+        fprintf (stderr, "jack_client_open() failed, status = 0x%2.0x\n", status);
         if (status & JackServerFailed) {
             fprintf (stderr, "Unable to connect to JACK server\n");
         }
@@ -353,52 +326,31 @@ main (int argc, char *argv[])
         fprintf (stderr, "unique name `%s' assigned\n", client_name);
     }
     
-    /* tell the JACK server to call `process()' whenever
-     there is work to be done.
-     */
-    
+    // tell the JACK server to call `process()' whenever there is work to be done.
     jack_set_process_callback (client, process, &data);
     
-    /* tell the JACK server to call `jack_shutdown()' if
-     it ever shuts down, either entirely, or if it
-     just decides to stop calling us.
-     */
-    
+    // tell the JACK server to call `jack_shutdown()' if it ever shuts down, either entirely, or if it just decides to stop calling us.
     jack_on_shutdown (client, jack_shutdown, 0);
     
-    /* create two ports */
-    
-    output_port1 = jack_port_register (client, "output1",
-                                       JACK_DEFAULT_AUDIO_TYPE,
-                                       JackPortIsOutput, 0);
-    
-    output_port2 = jack_port_register (client, "output2",
-                                       JACK_DEFAULT_AUDIO_TYPE,
-                                       JackPortIsOutput, 0);
+    // create two ports 
+    output_port1 = jack_port_register (client, "output1", JACK_DEFAULT_AUDIO_TYPE, JackPortIsOutput, 0);
+    output_port2 = jack_port_register (client, "output2", JACK_DEFAULT_AUDIO_TYPE, JackPortIsOutput, 0);
     
     if ((output_port1 == NULL) || (output_port2 == NULL)) {
         fprintf(stderr, "no more JACK ports available\n");
         exit (1);
     }
     
-    /* Tell the JACK server that we are ready to roll.  Our
-     * process() callback will start running now. */
-    
+    // Tell the JACK server that we are ready to roll.  Our process() callback will start running now.
     if (jack_activate (client)) {
         fprintf (stderr, "cannot activate client");
         exit (1);
     }
     
-    /* Connect the ports.  You can't do this before the client is
-     * activated, because we can't make connections to clients
-     * that aren't running.  Note the confusing (but necessary)
-     * orientation of the driver backend ports: playback ports are
-     * "input" to the backend, and capture ports are "output" from
-     * it.
-     */
-    
-    ports = jack_get_ports (client, NULL, NULL,
-                            JackPortIsPhysical|JackPortIsInput);
+    // Connect the ports.  You can't do this before the client is activated, because we can't make connections to clients
+    // that aren't running.  Note the confusing (but necessary) orientation of the driver backend ports: playback ports are
+    //"input" to the backend, and capture ports are "output" from it.
+    ports = jack_get_ports (client, NULL, NULL, JackPortIsPhysical|JackPortIsInput);
     if (ports == NULL) {
         fprintf(stderr, "no physical playback ports\n");
         exit (1);
@@ -414,7 +366,7 @@ main (int argc, char *argv[])
     
     jack_free (ports);
     
-    /* install a signal handler to properly quits jack client */
+    // install a signal handler to properly quit jack client
 #ifdef WIN32
     signal(SIGINT, signal_handler);
     signal(SIGABRT, signal_handler);
