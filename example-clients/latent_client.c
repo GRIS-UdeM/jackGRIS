@@ -238,13 +238,8 @@ static void signal_handler(int sig) {
     exit(0);
 }
 
-/**
- * The process callback for this JACK application is called in a
- * special realtime thread once for each audio cycle.
- *
- * This client follows a simple rule: when the JACK transport is
- * running, copy the input port to the output.  When it stops, exit.
- */
+ // The process callback for this JACK application is called in a special realtime thread once for each audio cycle.
+ // This client follows a simple rule: when the JACK transport is running, copy the input port to the output.  When it stops, exit.
 
 int process (jack_nframes_t nframes, void *arg) {
     jack_default_audio_sample_t *out1, *out2;
