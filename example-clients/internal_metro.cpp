@@ -38,6 +38,8 @@ static int process_audio (jack_nframes_t nframes, void* arg)
         memcpy (buffer + (nframes - frames_left), metro->wave + metro->offset, sizeof (sample_t) * frames_left);
         metro->offset += frames_left;
     }
+    
+    fprintf (stderr, ".");
 
     return 0;
 }
